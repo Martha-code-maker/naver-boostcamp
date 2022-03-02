@@ -13,3 +13,7 @@
  :understanding math
 # week5 
  :important basic of deeplearning
+
+
+# if you want to check more information visit: 
+https://blog.naver.com/uj525
