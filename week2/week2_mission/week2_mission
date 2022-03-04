@@ -1,0 +1,107 @@
+Q1. Try to implement a class that stores the final exam score separately. 
+    However, the instance of the generator should be declared private, store data using the decorator, and output the average value using the function.
+    - Use the proclamation and decorator of Data Type.
+    
+    #test score, mid : 50, final : 75
+    
+    class Score():
+      #TODO
+    
+    #output function
+    score = Score(50,75)
+    print((score.mid + score.final) /2 )
+    
+    #output
+    62.5
+
+Q2. We're creating a game that uses a variety of rides. For quick implementation, we're trying to create a new class called Bike using the Car class 
+    that we already implemented. Take Car Class and organize the new Bike class to be output as follows.
+    - Bike class has additional size factor.
+    
+    class Car():
+    def __init__(self,fuel,wheels):
+        self.fuel = fuel
+        self.wheels = wheels
+
+    class Bike():
+      #TODO
+     
+     #output
+     >>>bike = Bike("gas",2,"small")
+     >>>print(bike.fuel,bike.wheels,bike.size)
+     gas 2 small
+ 
+Q3. The department office has delivered data on the results of this test to CSV files. 
+    We need to use this file to process the data. Use file input and output to make file data a list.
+    -Read the data inside the CSV file using the open function used for file input/output
+    ***CSV file is attached in file.
+    
+    def read_file(file_path):
+        #TODO
+        
+    # designated the route of file as file_path
+    # ex) file_path = ".\data-01-test-score.csv"
+    
+    #output example
+    >>>print(read_file())
+    
+    [['73', '80', '75', '152'], ['93', '88', '93', '185'], ['89', '91', '90', '180'], ['96', '98', '100', '196'], 
+    ['73', '66', '70', '142'], ['53', '46', '55', '101'], ['69', '74', '77', '149'], ['47', '56', '60', '115'], 
+    ['87', '79', '90', '175'], ['79', '70', '88', '164'], ['69', '70', '73', '141'], ['70', '65', '74', '141'], 
+    ['93', '95', '91', '184'], ['79', '80', '73', '152'], ['70', '73', '78', '148'], ['93', '89', '96', '192'],
+    ['78', '75', '68', '147'], ['81', '90', '93', '183'], ['88', '92', '86', '177'], ['78', '83', '77', '159'], 
+    ['82', '86', '90', '177'], ['86', '82', '89', '175'], ['78', '83', '85', '175'], ['76', '83', '71', '149'], 
+    ['96', '93', '95', '192']]
+
+Q4. We have just implemented a function that reads CSV files, but we are going to proceed with the configuration of the class 
+    to use it a little more efficiently. Try implementing a class that includes the function you just implemented.
+    - Use the merge list to output the sum of data in the list.
+    - Change the data type of the data before adding the data.      
+    
+    class ReadCSV():
+      def __init__(self,file_path):
+         #TODO
+
+
+     def read_file(self):
+          #TODO
+
+      def merge_list(self):
+          #TODO
+     #output example     
+    >>> read_csv = ReadCSV(file_path)
+    >>> print(read_csv.read_file())
+    >>> print(read_csv.merge_list()) 
+    
+    [[73, 80, 75, 152], [93, 88, 93, 185], [89, 91, 90, 180], [96, 98, 100, 196], [73, 66, 70, 142],
+    [53, 46, 55, 101], [69, 74, 77, 149], [47, 56, 60, 115], [87, 79, 90, 175], [79, 70, 88, 164], 
+    [69, 70, 73, 141], [70, 65, 74, 141], [93, 95, 91, 184], [79, 80, 73, 152], [70, 73, 78, 148], 
+    [93, 89, 96, 192], [78, 75, 68, 147], [81, 90, 93, 183], [88, 92, 86, 177], [78, 83, 77, 159],
+    [82, 86, 90, 177], [86, 82, 89, 175], [78, 83, 85, 175], [76, 83, 71, 149], [96, 93, 95, 192]]
+    
+  [380, 459, 450, 490, 351, 255, 369, 278, 431, 401, 353, 350, 463, 384, 369, 470, 368, 447, 443, 397, 435, 432, 421, 379, 476]
+
+
+Q5. You must change the function operation of the merge_list in the previously implemented class; 
+    change it to a function that obtains the mean, not the simple sum.
+    - Use a function to handle the data in the list to implement it.
+    - After obtaining the final average, sort it in ascending order.
+    
+    class ReadCSV():
+      def __init__(self,file_path):
+         #TODO
+
+
+     def read_file(self, #):
+          #TODO
+
+      def merge_list(self, #):
+          #TODO
+          
+      #output example
+      >>>read_csv = ReadCSV(file_path)
+      >>>print(read_csv.merge_list())
+      
+      [63.75, 69.5, 87.5, 87.75, 88.25, 92.0, 92.25, 92.25, 94.75, 95.0, 96.0, 
+      99.25, 100.25, 105.25, 107.75, 108.0, 108.75, 110.75, 111.75, 112.5, 114.75,
+      115.75, 117.5, 119.0, 122.5]
