@@ -1,0 +1,81 @@
+Q1. Python often uses list-type data, so it's important to handle the list well, then let's deal with the list data given.
+    -We collected various data and got the following number_list.
+    -But the data we need is odd data.
+    Then, write a function that allows the number_list to output only odd data.
+    
+    num_list = [1, 5, 7, 15, 16, 22, 28, 29]
+
+    def get_odd_num(num_list):
+      #TODO
+    
+    print(get_odd_num(num_list))
+    
+    #output
+    [1, 5, 7, 15, 29]
+    
+Q2. I received a string for data processing. But when I received a string it was entered backwards in terms of words. 
+    Create a function that outputs it back to its original form.
+    -Create a function that receives string sentences and outputs words in reverse order.
+    -Use string operations.
+    
+    sentence = "way a is there will a is there where"
+
+    def reverse_sentence(sentence):
+    #TODO
+    
+    print(reverse_sentence(sentence))
+ 
+    #output
+    where there is a will there is a way
+
+    
+Q3. midterm and final exam scores for this semester have been announced; each student's scores are stored in a tuple form, 
+    and there are lists including them. Use this to create a function that outputs the average score for each student.
+    -Use the list and repeat to bring in the data.
+    -Use this to get the average for each student
+    
+    score = [(100,100), (95,90), (55,60), (75,80), (70,70)]
+
+    def get_avg(score):
+    #TODO
+    
+    #output
+    number 1 average :  100.0
+    number 2 average :  92.5
+    number 3 average :  57.5
+    number 4 average :  77.5
+    number 5 average :  70.0
+    
+    
+Q4. Fruits and vegetables were delivered from each of the two suppliers; each of which was arranged in two dictionaries, representing the number of items. 
+    To organize the items, create a function that outputs two dictionary objects together.
+    -Please put the duplicates together.
+    -Check the redundancy using the key value of the data in each of the Dictionary data.
+    
+    dict_first = {'사과': 30, '배': 15, '감':10, '포도':10}
+    dict_second = {'사과':5, '감': 25 , '배': 15, '귤': 25}
+    
+    def merge_dict(dict_first, dict_second):
+    #TODO
+        
+    print(merge_dict(dict_first,dict_second))
+
+    #output
+    {'감': 35, '귤': 25, '배': 30, '사과': 35, '포도': 10}
+
+Q5. I have been typing words, but there is a problem that the numbers are mixed. To process this, receive the string in the function, 
+    remove the number in the string, and output the list with only string.
+    -Use string operations to cut strings.
+    
+    inputs = "cat32dog16cow"
+   
+    def find_string(inputs: str):
+    #TODO
+    
+    string_list = find_string(inputs)
+    print(string_list)
+    
+    #output
+    ['cat', 'dog', 'cow']
+
+
