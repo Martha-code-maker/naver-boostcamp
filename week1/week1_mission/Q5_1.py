@@ -1,5 +1,3 @@
-from curses.ascii import isdigit
-
 
 inputs = "cat32dog16cow"
 

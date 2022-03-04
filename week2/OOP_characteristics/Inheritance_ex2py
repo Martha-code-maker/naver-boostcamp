@@ -1,0 +1,27 @@
+class Person(object):
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def about_me(self):
+        print("my name is ", self.name," and my age is ", str(self.age))
+
+class Employee(Person):
+    def __init__(self, name, age, gender, salary, hire_date):
+        super().__init__(name, age, gender)
+        self.salary = salary
+        self.hire_date = hire_date
+
+    def do_work(self):
+        print("Working hard")
+    
+    def about_me(self):
+        super().about_me
+        print("my salary is ", self.salary, "my hiring date is ", self.hire_date)
+
+
+myPerson = Person("John",26,"Male")
+myPerson.about_me()
+myEmployee = Employee("Yujin",25, "Female",300000,"2022/03/04")
+myEmployee.about_me()

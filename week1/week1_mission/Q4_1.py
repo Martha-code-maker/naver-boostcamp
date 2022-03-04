@@ -5,7 +5,7 @@ def merge_dict(dict_first, dict_second):
     dict_sum = dict_first.copy()
 
     for key, value in dict_second.items():
-        if key in dict_sum.key():
+        if key in dict_sum.keys():
             dict_sum[key] += value
         else:
             dict_sum[key] = value
