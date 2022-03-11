@@ -1,0 +1,71 @@
+Q1. We will practice various operations to get close to Numpy in earnest.
+    Create a numpy array with a matrix of 5x3 with random data and a numpy array with a matrix of 3x2 and proceed with the matrix operation.
+    
+    import numpy as np
+    
+    arr1 = #TODO
+    arr2 = #TODO
+    
+    dot = #TODO
+    
+    >>>print(dot, dot.shape)
+    
+Q2. Now, when there are two numpy arrays used by Numpy, try to find the concatenate operation of two numpy arrays.
+    -Try to output the results of the axis with 0,1.
+    -Check out how each data is added.
+    
+    arr1 = np.array([[5,7],[9,11]],float)
+    arr2 = np.array([[2,4],[6,8]],float)
+    
+    concat_1 = #TODO axis 0
+    concat_2 = #TODO axis 1
+Q3. Missions from 3 to 5 are missions to implement linear regression that predicts the correct answer using Numpy. 
+    I'll prepare the data as the first step. When data is given as follows, separate the data for slope descent.
+    Prepare the learning and correct answer data using the given xy data
+    
+    import numpy as np
+    
+    xy = np.array([[1., 2., 3., 4., 5., 6.],[10., 20., 30., 40., 50., 60.]])
+    
+    x_train = #TODO
+    y_train = #TODO
+    
+    #output
+    >>>print(x_train, x_train.shape)
+    >>>print(y_train, y_train.shape)
+    [1., 2., 3., 4., 5., 6.] (6,)
+    [10., 20., 30., 40., 50., 60.] (6,)
+    
+
+Q4. Define the x_train data separated from the above and the weight and bias values to be calculated for the slope descent method.
+    The weight and bias implemented here are the slopes and y segments of the straight line when linear regression calculations are performed.
+    *Use the random function in the numpy.
+    
+    beta_gd = #TODO
+    bias = #TODO
+    
+Q5. Now, let's finally implement the code that learns linear regression by slope descent. Finally, when you repeat 1000 times, output the results.
+    -Error is calculated using the square of the difference.
+    -Gradient values are differential values for each variable that we predict
+    
+     import numpy as np
+    
+    xy = np.array([[1., 2., 3., 4., 5., 6.],[10., 20., 30., 40., 50., 60.]])
+    
+    x_train = #Q3
+    y_train = #Q3
+    
+    beta_gd = #Q4
+    bias = #Q4
+    
+    learning_rate = 0.01
+    
+    for i in range(1000):
+        #TODO
+        
+        if i % 100 == 0:
+            print("Epoch ({:10d}/1000) error: {:10f}, beta_gd: {:10f}, bias: {:10f}".format(i,error,beta_gd.item(),bias.item()))
+    
+    
+    
+    
