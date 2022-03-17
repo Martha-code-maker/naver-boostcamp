@@ -1,0 +1,110 @@
+Q1. Let's first discuss the series supported by Pandas.
+When you are given indexes and data below, make it into Pandas' Series.
+-Redefine the Series, which outputs data between 10 to 20 from a given data.
+
+import pandas as pd
+ 
+idx=["HDD","SSD","USB","CLOUD"]
+data = [19,11,5,97]
+
+series = #
+
+# between 10 to 20
+series= #
+
+print(series)
+
+#output
+HDD 19
+SSD 11
+dtype: int64
+
+Q2. Let's try to address the dataframe supported by Pandas: Here are the data that are arranged for each fruit and vegetable:
+It is less efficient to see these two data separately, so please create each data frame in each table and then proceed with the next implementation.
+-Combine the two data into one data.
+-Sort the data using the type of combined data.
+-Finally, output the sum of the most expensive fruits and vegetables.
+
+Name      Type        Price
+cherry    Fruit        100
+mango     Fruit        110
+potato    Vegetable    60
+onion     Vegetable    80
+
+Name      Type        Price
+pepper    Vegetable    50
+carrot    Vegetable    70
+banana    Fruit        90
+kiwi      Fruit        120
+
+import pandas as pd
+
+df1 = # Dataframe 1
+df2 = # Dataframe 2
+
+#comebine df1,df2
+df3 = #
+
+#sort Fruit and VEgtable using type, and sort in descending order
+df_fruit = #
+df_veg = #
+
+print("Sum of Top 2 Fruit Price: ",#)
+print("Sum of Top 2 Vegetable Price: ",#)
+
+#output
+Sum of Top 2 Fruit Price: 230
+Sum of Top 2 Vegetable Price: 150
+
+
+Q3. A total of five players played the game; a total of five rounds were played, each with five scores per participant.
+After you create a dataframe, you can proceed with each detail implementation.
+-Sort the data by adding columns from each round with the participant's name as index.
+-When the score of the sixth round is as follows, add it.
+-Get the mean, max, and min values of each data.
+
+16 lines (12 sloc)  413 Bytes
+   
+import pandas as pd
+
+idx = ["Sue","Ryan", "Jay","Jane","Anna"]
+col = ["round_1", "round_2", "round_3", "round_4","round_5"]
+data = [[55,65,60,66,57],
+        [64,77,71,79,67],
+        [88,81,79,89,77],
+        [45,35,30,46,47],
+        [91,96,90,97,99]]
+
+df = #
+
+#round_6 data is [11, 15, 13, 17, 1] , add it
+col_round_6 = #
+
+print(#)
+
+Q4. From this mission, I will simply print out the graph using Matplotlib.
+When given the following data t, print out the proposed graph as an output example.
+-Check out how to express the color and shape of each marker in the Plot function.
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.arange(0.,5.,0.2)
+#we use red dashes,m blue square, green triangles
+plt.plot(#)
+plt.show()
+
+Q5. When given the following data using Matplotlib, print out the graph in the same form as the output example.
+-Get each group data into a different type of graph. Each bar, point, and line graph.
+
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+names = ['group_a', 'group_b', 'group_c']
+values = [1, 10, 100]
+
+plt.figure(figsize=(9,3))
+
+plt.#
+plt.show()
