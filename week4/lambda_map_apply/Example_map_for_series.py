@@ -20,8 +20,8 @@ print(df_info.sum())
 print(df_info.apply(sum))
 
 #scalar값 이외에 series값의 반환 가능
-def(fx):
-    return Series([x.min(), x.max()], index= ["min","max"])
+def f(x):
+    return pd.Series([x.min(), x.max()], index= ["min","max"])
 df_info.apply(f)
 
 #applymap for dataframe
